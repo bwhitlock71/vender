@@ -1,5 +1,7 @@
 import React, { useState } from "react"
+import { Link } from "react-router-dom";
 import "./Chips.css";
+import App from "./App";
 
 const Chips = () => {
     const [count, setCount] = useState(0);
@@ -12,6 +14,8 @@ const Chips = () => {
         <h1>Bags devoured: {count}</h1>
         <button onClick={() => setCount(count + 1)}>NOM NOM NOM🥱</button>
         <button onClick={() => setCount(count - 1)}>I ATE TO MUCH🤢</button>
+        <br></br>
+        <button><Link to="/">GO BACK</Link></button>
       </div>
     );
 };

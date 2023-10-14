@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Soda.css";
 
 const Soda = () => {
@@ -12,6 +13,8 @@ return (
         <h1>Soda count: {count}</h1>
         <button onClick={() => setCount(count + 1)}>MMMM SUGAR🤩</button>
         <button onClick={() => setCount(count - 1)}>TO MUCH SUGAR🤢</button>
+        <br></br>
+        <button><Link to="/">GO BACK</Link></button>
     </div>
 )
 };

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Donut.css";
 
 const Donut = () => {
@@ -12,6 +13,8 @@ return (
         <h1>Donuts savored: {count}</h1>
         <button onClick={() => setCount(count + 1)}>MMMM Donuts🤩</button>
         <button onClick={() => setCount(count - 1)}>TO MANY DONUTS🤢</button>
+        <br></br>
+        <button><Link to="/">GO BACK</Link></button>
     </div>
 )
 };
